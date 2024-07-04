@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "porsche01";
-    src: url("https://github.com/EvertonCordeiro1994/meu_site_senac/blob/main/fonts/911porschav3.ttf");
+    font-family: "porsche";
+    src: url("./fonts/911porschav3.ttf");
  }
 
 *{
@@ -18,7 +18,7 @@ header{
 }
 
 #titulo_nav{
-    font-family: porsche01;
+    font-family: porsche;
 }
 
 #especificacoes{
@@ -30,6 +30,6 @@ header{
 
 span{
     font: 2rem bold black;
-    font-family: porsche01;
+    font-family: porsche;
  
 }
