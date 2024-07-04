@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "porsche01";
+    src: url("https://github.com/EvertonCordeiro1994/meu_site_senac/blob/main/fonts/911porschav3.ttf");
+ }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#titulo_nav{
+    font-family: porsche01;
+}
+
+#especificacoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+span{
+    font: 2rem bold black;
+    font-family: porsche01;
+ 
+}
