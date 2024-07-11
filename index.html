@@ -5,46 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Porsche 911</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./imagens/favicon/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon/favicon-32x32.png">
 </head>
 <body>
     <header>
-        <i id="iconHamburguer" class="fa-solid fa-bars"></i>
-       
-        <h1 id="titulo_nav">PORSCHE</h1>
-
-        <img src="./imagens/favicon/favicon-32x32.png" alt="">
+        <img id="logo-nav" src="./images/logo-colorido.png" alt="">
+        <nav>
+            <ul id="lista-nav">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+                <li><a href="#videos">VIDEOS</a></li>
+                <li><a href="#formulario">GALERIA</a></li>
+            </ul>
+        </nav>
+        <button id="btn-nav">COMPRE O SEU</button>
     </header>
 
-    <main>
-
-        <div id="carro_home">
-            <img src="./imagens/911.svg" alt="">
-            <img src="./imagens/carro-home.avif" alt="">
+    <section id="home">
+        <div id="letreiro-home">
+            <h1 id="texto01">PORSCHE</h1>
+            <h1 id="texto02">CARRERA</h1>
         </div>
 
-      
-
-        <section id="especificacoes">
+        <div id="container02"> 
             <div>
-                <p><span>4,1</span>s</p>
-                <p>Aceleração 0 - 100 km/h</p>
+                <img id="img911" src="./images/911.svg" alt="">
+                <img id="carro-home" src="https://images-porsche.imgix.net/-/media/646ED7CDD4DF4060A4823F3A9DB8DA22_97CB2E119D8749C19004EC939CD09E96_CZ25W01IX0010911-carrera-side?w=1400&q=85&crop=faces%2Centropy%2Cedges&auto=format" alt="">
             </div>
-            <div>
-                <p><span>290</span>kw/<span>394</span>cv</p>
-                <p>Potência (kW)/Potência (cv)</p>
-            </div>
-            <div>
-                <p><span>294</span>km/h</p>
-                <p>Velocidade máxima</p>
-            </div>
-        </section>
-
-    </main>
+            
+            <div  id="botoes-home">
+                <button id="btn-coupe" class="btn btn-ativado-coupe" onclick="Coupe()">COUPÉ</button>
     
+                <button id="btn-cabriolet" class="btn" onclick="Cabriolet()">CABRIOLET</button>
+            </div>
+           
+            
+        </div>
 
+    </section>
 
+    <section id="formulario">
+        <form action="">
+            <input type="text">
+            <input type="email">
+            <input type="tel">
+            <button>Enviar</button>
+        </form>
+
+    </section>
+
+    <footer>
+       
+    </footer>
 
     <script src="./script.js"></script>    
 </body>

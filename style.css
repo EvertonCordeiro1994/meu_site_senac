@@ -1,35 +1,162 @@
 @font-face {
-    font-family: "porsche";
-    src: url("./fonts/911porschav3.ttf");
- }
+  font-family: "porsche";
+  src: url("./fonts/911porschav3.ttf");
+}
+@font-face {
+  font-family: "link-nav";
+  src: url("./fonts/Cocogoose-Pro-Semilight-trial.ttf");
+}
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-claro-coupe: #4464A7;
+  --azul-escuro-coupe: #042670;
+  --amarelo-claro-cabriolet: #DCDE94;
+  --amarelo-escuro-cabriolet: #A5A64A;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5%;
+  margin-top: 5px;
+}
+
+#logo-nav {
+  width: 3rem;
+}
+
+#lista-nav {
+  display: flex;
+  gap: 4rem;
+}
+
+#lista-nav li {
+  list-style: none;
+  color: var(--hunter-green);
+  font-family: "link-nav";
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--hunter-green);
+}
+
+#btn-nav {
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: none;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#btn-nav:hover {
+  transform: translate(5px, -5px);
+}
+
+#home {
+  width: 100vw; /* Alterei de vh para vw */
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+#letreiro-home {
+  transform: rotate(-90deg);
+  margin-top: 20rem;
+  margin-left: -300px;
+  height: 2rem;
+}
+
+#letreiro-home h1 {
+  font-family: "porsche";
+  font-size: 7rem;
+  
+}
+
+#texto01 {
+  color: black;
+  font-family: "porsche";
+  font-size: 5rem;
+  position: absolute;
+}
+
+#texto02 {
+  color: var(--azul-claro-coupe);
+  font-family: "porsche";
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  margin-top: 3.9rem;
+}
+
+
+#container02{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10rem;
+  justify-content: center;
 
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
+#img911{
+  width: 90%;
+  margin-left: -20rem;
+  fill: #182315;
+}
+#carro-home {
+  margin-top: -3rem;
+  margin-left: -30rem;
+  width: 70rem;
+  
 }
 
-#titulo_nav{
-    font-family: porsche;
+#botoes-home {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-left: -25rem;
+  margin-top: 5rem;
+  
 }
 
-#especificacoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
+
+.btn {
+  width: 15rem;
+  height: 3.5rem;
+  background: none;
+  border: none;
+  font-family: "porsche";
+  font-size: 1rem;
+  cursor: pointer;
+  transition:all 0.5s;
 }
 
-span{
-    font: 2rem bold black;
-    font-family: porsche;
- 
+.btn-ativado-coupe {
+  width: 25rem;
+  background-color: var(--azul-claro-coupe);
+  color: #fff;
+  transform: skewX(-15deg);
+  letter-spacing: 1rem;
+  transition:all 0.5s;
+  
+}
+.btn-ativado-cabriolet {
+  width: 25rem;
+  background-color: var(--amarelo-escuro-cabriolet);
+  color: #fff;
+  transform: skewX(-15deg);
+  letter-spacing: 1rem;
+  transition:all 0.5s;
+  
 }
