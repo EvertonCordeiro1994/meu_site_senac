@@ -2,6 +2,7 @@
   font-family: "porsche";
   src: url("./fonts/911porschav3.ttf");
 }
+
 @font-face {
   font-family: "link-nav";
   src: url("./fonts/Cocogoose-Pro-Semilight-trial.ttf");
@@ -18,6 +19,11 @@
   --azul-escuro-coupe: #042670;
   --amarelo-claro-cabriolet: #DCDE94;
   --amarelo-escuro-cabriolet: #A5A64A;
+}
+
+section{
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -64,7 +70,8 @@ a {
 }
 
 #home {
-  width: 100vw; /* Alterei de vh para vw */
+  width: 100vw;
+  /* Alterei de vh para vw */
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -80,7 +87,7 @@ a {
 #letreiro-home h1 {
   font-family: "porsche";
   font-size: 7rem;
-  
+
 }
 
 #texto01 {
@@ -99,7 +106,7 @@ a {
 }
 
 
-#container02{
+#container02 {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -108,16 +115,17 @@ a {
 
 }
 
-#img911{
+#img911 {
   width: 90%;
   margin-left: -20rem;
   fill: #182315;
 }
+
 #carro-home {
   margin-top: -3rem;
   margin-left: -30rem;
   width: 70rem;
-  
+
 }
 
 #botoes-home {
@@ -126,7 +134,7 @@ a {
   justify-content: center;
   margin-left: -25rem;
   margin-top: 5rem;
-  
+
 }
 
 
@@ -139,7 +147,7 @@ a {
   font-family: "porsche";
   font-size: 1rem;
   cursor: pointer;
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn-ativado-coupe {
@@ -148,15 +156,46 @@ a {
   color: #fff;
   transform: skewX(-15deg);
   letter-spacing: 1rem;
-  transition:all 0.5s;
-  
+  transition: all 0.5s;
+
 }
+
 .btn-ativado-cabriolet {
   width: 25rem;
   background-color: var(--amarelo-escuro-cabriolet);
   color: #fff;
   transform: skewX(-15deg);
   letter-spacing: 1rem;
-  transition:all 0.5s;
-  
+  transition: all 0.5s;
+
+}
+
+#formulario {
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: -20px 20px 60px #d9d9d9,
+    20px -20px 60px #ffffff;
+}
+
+form input {
+  width: 30rem;
+  height: 2rem;
+}
+
+form button {
+  width: 100px;
+  height: 40px;
+}
+
+#carro-formulario{
+  width: 40%;
+  height: 60%;
 }
